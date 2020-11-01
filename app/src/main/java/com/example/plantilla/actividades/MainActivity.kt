@@ -5,8 +5,11 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.plantilla.R
 import com.example.plantilla.adaptadores.AdaptadorAlineacion
+import com.example.plantilla.adaptadores.AdaptadorPartidos
 import com.example.plantilla.clasedatos.Alineacion
+import com.example.plantilla.clasedatos.Partidos
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.principalpartidospantalla.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +25,8 @@ class MainActivity : AppCompatActivity() {
                 generarDatosPrueba(),
                 this
             )
+        rvpartidos.layoutManager = LinearLayoutManager(this)
+        rvpartidos.adapter = AdaptadorPartidos(Datos(), this)
     }
 
     private  fun generarDatosPrueba() : ArrayList<Alineacion>{
@@ -64,6 +69,43 @@ class MainActivity : AppCompatActivity() {
 
         return lista
         }
+
+    private  fun Datos() : ArrayList<Partidos>{
+        val lista = ArrayList<Partidos>()
+
+        lista.add(
+            Partidos(
+
+                R.drawable.bundes,
+                "Bundesliga",
+                R.drawable.frank,
+                "Eintrach Frankfut",
+                R.drawable.bayer,
+                "Bayer Munich",
+                "2",
+                "3",
+                "Final del partido"
+            )
+        )
+
+        lista.add(
+            Partidos(
+
+                R.drawable.premier,
+                "Premier League",
+                R.drawable.liver,
+                "Liverpool",
+                R.drawable.united,
+                "Sheffield United",
+                "4",
+                "1",
+                "Final del partido"
+            )
+        )
+
+
+        return lista
+    }
 
 
 

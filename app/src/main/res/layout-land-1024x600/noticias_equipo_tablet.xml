@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".Activity_Noticias">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="713dp"
+            android:layout_height="92dp"
+            app:srcCompat="@drawable/barca" />
+
+        <TextView
+            android:id="@+id/teamName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center"
+            android:shadowColor="#FFFFFF"
+            android:text="FC Barcelona"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <TextView
+                android:id="@+id/teamName2"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FFFFFF"
+                android:text="Noticias"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Temporada"
+                android:layout_width="137dp"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FFFFFF"
+                android:text="Temporada"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/plantilla"
+                android:layout_width="123dp"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FFFFFF"
+                android:text="Plantilla"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="600dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="BRILLANTES: Ansu Fati y Pedri lideraron en el intento de remontada" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="El Dynamo de Kiev se presentará en el Camp Nou sin porteros " />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="La salida de Bartomeu no ha cambiado los planes del Barça con Eric García" />
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="El Barça ganó la Liga con comienzos casi tan horribles como el de este 2020 " />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="El peor arranque goleador de la carrera de Messi: Solo 1 gol en 6 partidos de Liga " />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
