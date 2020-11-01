@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
                 "Frenkie de Jong",
                 "Philipe Coutinho",
                 "Riqui Puig",
-                "cindy"
+                "cindyp"
 
             )
         )
