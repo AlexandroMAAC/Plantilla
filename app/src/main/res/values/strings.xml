@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Plantilla</string>
+    <string name="Porteros">Porteros</string>
+    <string name="Defensas">Defensas</string>
+    <string name="Mediocampistas">MedioCampistas</string>
+
+    <string-array name="Porteros">
+        <item>Neto</item>
+        <item>Marc Andre Ter Stegen</item>
+    </string-array>
+
+    <string-array name="Defensas">
+        <item>Sergiño Dest</item>
+        <item>Gerard Pique</item>
+        <item>Clement Lenglet</item>
+        <item>Jordi Alba</item>
+    </string-array>
+
+    <string-array name="MedioCampistas">
+        <item>Frenkie de Jong</item>
+        <item>Phelipe Coutinho</item>
+        <item>Riqui Puig</item>
+    </string-array>
+</resources>
