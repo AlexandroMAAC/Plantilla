@@ -5,8 +5,11 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
+import com.example.plantilla.R
 import kotlinx.android.synthetic.main.activity_main.*
+import org.w3c.dom.Text
 
 class Activity_Noticias : AppCompatActivity() {
 
@@ -16,6 +19,19 @@ class Activity_Noticias : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
 
+        val home = findViewById<ImageView>(R.id.home)
+        home.setOnClickListener{
+            setContentView(R.layout.activity_mainc1)
+        }
+        val partidos = findViewById<TextView>(R.id.partidos)
+        partidos.setOnClickListener {
+            setContentView(R.layout.activity_detalles)
+        }
+
+        val plantilla = findViewById<TextView>(R.id.plantilla)
+        plantilla.setOnClickListener {
+            setContentView(R.layout.principalpartidospantalla)
+        }
         val linkNoticia1 = findViewById<Button>(R.id.btn1)
         linkNoticia1.setOnClickListener(){
             val url = "https://www.fcbarcelonanoticias.com/jugadores/brillantes-ansu-fati-pedri-lideraron-en-intento-remontada_261910_102.html"

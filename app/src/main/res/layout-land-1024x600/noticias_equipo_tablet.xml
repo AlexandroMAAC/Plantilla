@@ -4,72 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#818181"
     android:orientation="vertical"
     tools:context=".Activity_Noticias">
 
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout6"
         android:layout_width="match_parent"
         android:layout_height="176dp"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="713dp"
-            android:layout_height="92dp"
-            app:srcCompat="@drawable/barca" />
+            android:layout_width="416dp"
+            android:layout_height="114dp"
+            app:srcCompat="@drawable/barca"
+            tools:layout_editor_absoluteX="304dp"
+            tools:layout_editor_absoluteY="0dp" />
 
         <TextView
             android:id="@+id/teamName"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:gravity="center"
             android:shadowColor="#FFFFFF"
             android:text="FC Barcelona"
             android:textColor="#FFFFFF"
-            android:textSize="28sp" />
+            android:textSize="28sp"
+            tools:layout_editor_absoluteX="430dp"
+            tools:layout_editor_absoluteY="134dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="36dp">
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="106dp"
+            android:layout_height="82dp"
+            android:src="@drawable/inicio" />
 
-            <TextView
-                android:id="@+id/teamName2"
-                android:layout_width="137dp"
-                android:layout_height="wrap_content"
-                android:shadowColor="#FFFFFF"
-                android:text="Noticias"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/Temporada"
-                android:layout_width="137dp"
-                android:layout_height="wrap_content"
-                android:shadowColor="#FFFFFF"
-                android:text="Temporada"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <TextView
-                android:id="@+id/plantilla"
-                android:layout_width="123dp"
-                android:layout_height="wrap_content"
-                android:shadowColor="#FFFFFF"
-                android:text="Plantilla"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp" />
-        </LinearLayout>
-    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="1012dp"
+        android:layout_height="44dp">
+
+        <TextView
+            android:id="@+id/teamName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#FFFFFF"
+            android:text="Noticias"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            tools:layout_conversion_absoluteHeight="25dp"
+            tools:layout_conversion_absoluteWidth="137dp"
+            tools:layout_editor_absoluteX="258dp"
+            tools:layout_editor_absoluteY="6dp" />
+
+        <TextView
+            android:id="@+id/Temporada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:shadowColor="#FFFFFF"
+            android:text="Temporada"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="25dp"
+            tools:layout_conversion_absoluteWidth="137dp"
+            tools:layout_editor_absoluteX="425dp" />
+
+        <TextView
+            android:id="@+id/plantilla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#FFFFFF"
+            android:text="Plantilla"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            tools:layout_conversion_absoluteHeight="25dp"
+            tools:layout_conversion_absoluteWidth="123dp"
+            tools:layout_editor_absoluteX="672dp"
+            tools:layout_editor_absoluteY="6dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="541dp"
+        android:layout_height="376dp"
+        android:layout_gravity="center">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="600dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:orientation="vertical">
 
 

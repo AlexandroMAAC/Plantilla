@@ -9,89 +9,6 @@
     tools:context=".actividades.MainActivity">
 
     <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="70dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="19dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-        app:layout_constraintEnd_toStartOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29"
-        app:srcCompat="@drawable/pngblanco" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#B23A3737"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
-
-        <TextView
-            android:id="@+id/textView6"
-            android:layout_width="273dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40"
-            android:layout_weight="1"
-            android:text="Plantillas"
-            android:textColor="#FFFFFF" />
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="267dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Partidos"
-            android:textColor="#FFFFFF" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="225dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Noticias"
-            android:textColor="#FFFFFF" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="match_parent"
-        android:layout_height="61dp"
-        android:background="#B23A3737"
-        android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
-
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="127dp"
-            android:layout_height="60dp"
-            android:layout_weight="1"
-            android:paddingTop="13dp"
-            android:src="?attr/actionModePasteDrawable" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="142dp"
-            android:layout_height="99dp"
-            android:layout_weight="1"
-            android:paddingBottom="30"
-            android:src="@drawable/pelotapng" />
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="128dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:paddingTop="14dp"
-            android:src="@android:drawable/stat_notify_chat" />
-
-    </LinearLayout>
-
-    <ImageView
         android:id="@+id/imageView3"
         android:layout_width="172dp"
         android:layout_height="154dp"
@@ -114,14 +31,65 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="553dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/noticias"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Noticias"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/partidos"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Partidos"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/plantilla"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Plantilla"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_dialog_dialer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPlantilla"
-        android:layout_width="442dp"
+        android:layout_width="367dp"
 
-        android:layout_height="689dp"
+        android:layout_height="687dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
