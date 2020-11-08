@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.plantilla.R
+import com.example.plantilla.clasedatos.Partidos
 import kotlinx.android.synthetic.main.elemento_partidos.view.*
 
 
