@@ -3,6 +3,10 @@
     <string name="Porteros">Porteros</string>
     <string name="Defensas">Defensas</string>
     <string name="Mediocampistas">MedioCampistas</string>
+    <string name="PantallaPrincipal">PantallaPrincipal</string>
+    <string name="ImgEquipos">ImgEquipos</string>
+    <string name="ImgLigas">ImgLigas</string>
+    <string name="ImgPosiciones">ImgPosiciones</string>
 
     <string-array name="Porteros">
         <item>Neto</item>

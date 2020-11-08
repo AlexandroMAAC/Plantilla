@@ -29,7 +29,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/LLMenuNav">
 
         <TextView
             android:id="@+id/textView6"
@@ -58,7 +58,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/LLMenuNav"
         android:layout_width="match_parent"
         android:layout_height="61dp"
         android:background="#B23A3737"
