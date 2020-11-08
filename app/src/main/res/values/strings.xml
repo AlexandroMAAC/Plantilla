@@ -5,8 +5,15 @@
     <string name="Mediocampistas">MedioCampistas</string>
     <string name="PantallaPrincipal">PantallaPrincipal</string>
     <string name="ImgEquipos">ImgEquipos</string>
+    <string name="TxtEquipos">TxtEquipos</string>
+    <string name="TxtBarcelona">Barcelona</string>
     <string name="ImgLigas">ImgLigas</string>
     <string name="ImgPosiciones">ImgPosiciones</string>
+    <string name="RCVplantilla">RCVplantilla</string>
+    <string name="Menu">MenudeNavegacion</string>
+    <string name="TxtPlantilla">Plantilla</string>
+    <string name="TxtPartidos">Partidos</string>
+    <string name="TxtNoticias">Noticias</string>
 
     <string-array name="Porteros">
         <item>Neto</item>
