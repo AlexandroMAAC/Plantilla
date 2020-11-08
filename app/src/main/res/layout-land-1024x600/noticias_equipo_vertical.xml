@@ -4,66 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#474747"
     android:orientation="vertical"
-    tools:context=".Activity_Noticias">
+    tools:context=".Activity_Noticias"
+    tools:ignore="MissingDefaultResource">
 
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="227dp"
+        android:layout_height="224dp"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="147dp"
-            app:srcCompat="@drawable/barca" />
+            android:layout_width="228dp"
+            android:layout_height="142dp"
+            app:srcCompat="@drawable/barca"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="73dp"
+            android:layout_height="57dp"
+            android:src="@drawable/inicio"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/teamName"
-            android:layout_width="match_parent"
-            android:layout_height="52dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
             android:shadowColor="#FFFFFF"
             android:text="FC Barcelona"
-            android:gravity="center"
             android:textColor="#FFFFFF"
-            android:textSize="28sp" />
-    </LinearLayout>
+            android:textSize="28sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="232dp"
+            tools:layout_editor_absoluteY="170dp" />
 
-    <LinearLayout
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="36dp">
+        android:layout_height="36dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <TextView
             android:id="@+id/teamName2"
-            android:layout_width="137dp"
-            android:layout_height="wrap_content"
+            android:layout_width="163dp"
+            android:layout_height="22dp"
+            android:gravity="center"
             android:shadowColor="#FFFFFF"
             android:text="Noticias"
             android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/Temporada"
+            app:layout_constraintEnd_toStartOf="@+id/Temporada"
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/Temporada"
-            android:layout_width="137dp"
-            android:layout_height="wrap_content"
+            android:layout_width="198dp"
+            android:layout_height="28dp"
+            android:gravity="center"
             android:shadowColor="#FFFFFF"
             android:text="Temporada"
             android:textColor="#FFFFFF"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/plantilla"
+            app:layout_constraintStart_toEndOf="@+id/teamName2"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/plantilla"
-            android:layout_width="123dp"
-            android:layout_height="wrap_content"
+            android:layout_width="198dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="4dp"
             android:shadowColor="#FFFFFF"
             android:text="Plantilla"
             android:textColor="#FFFFFF"
-            android:textSize="18sp" />
-    </LinearLayout>
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Temporada"
+            app:layout_constraintTop_toTopOf="@+id/Temporada" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
