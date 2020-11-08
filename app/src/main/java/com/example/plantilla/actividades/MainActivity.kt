@@ -70,7 +70,42 @@ class MainActivity : AppCompatActivity() {
         return lista
         }
 
+    private  fun Datos() : ArrayList<Partidos>{
+        val lista = ArrayList<Partidos>()
 
+        lista.add(
+            Partidos(
+
+                R.drawable.bundes,
+                "Bundesliga",
+                R.drawable.frank,
+                "Eintrach Frankfut",
+                R.drawable.bayer,
+                "Bayer Munich",
+                "2",
+                "3",
+                "Final del partido"
+            )
+        )
+
+        lista.add(
+            Partidos(
+
+                R.drawable.premier,
+                "Premier League",
+                R.drawable.liver,
+                "Liverpool",
+                R.drawable.united,
+                "Sheffield United",
+                "4",
+                "1",
+                "Final del partido"
+            )
+        )
+
+
+        return lista
+    }
 
 
 
