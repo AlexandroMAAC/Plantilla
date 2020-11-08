@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
                 R.drawable.portero,
                 "Porteros",
-                "Neto",
+                "Robiño",
                 "Marc Andre Ter Stegen",
                 "",
                 ""
