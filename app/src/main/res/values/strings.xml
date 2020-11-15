@@ -14,6 +14,7 @@
     <string name="TxtPlantilla">Plantilla</string>
     <string name="TxtPartidos">Partidos</string>
     <string name="TxtNoticias">Noticias</string>
+    <string name="TxtLogo">CindePortes</string>
 
     <string-array name="Porteros">
         <item>Neto</item>
