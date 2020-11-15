@@ -73,11 +73,11 @@
             android:text="Temporada"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/plantilla"
+            app:layout_constraintEnd_toStartOf="@+id/plantilla4"
             app:layout_constraintStart_toEndOf="@+id/teamName2" />
 
         <TextView
-            android:id="@+id/plantilla"
+            android:id="@+id/plantilla4"
             android:layout_width="135dp"
             android:layout_height="32dp"
             android:layout_marginEnd="32dp"

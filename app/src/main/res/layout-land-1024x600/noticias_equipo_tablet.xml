@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="#818181"
     android:orientation="vertical"
-    tools:context=".Activity_Noticias">
+    tools:context=".actividad_noticia_equipo.Activity_Noticias"
+    tools:ignore="MissingDefaultResource">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,7 +22,8 @@
             android:layout_height="114dp"
             app:srcCompat="@drawable/barca"
             tools:layout_editor_absoluteX="304dp"
-            tools:layout_editor_absoluteY="0dp" />
+            tools:layout_editor_absoluteY="0dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/teamName"
@@ -33,13 +35,15 @@
             android:textColor="#FFFFFF"
             android:textSize="28sp"
             tools:layout_editor_absoluteX="430dp"
-            tools:layout_editor_absoluteY="134dp" />
+            tools:layout_editor_absoluteY="134dp"
+            tools:ignore="MissingConstraints" />
 
         <ImageView
             android:id="@+id/imageView11"
             android:layout_width="106dp"
             android:layout_height="82dp"
-            android:src="@drawable/inicio" />
+            android:src="@drawable/inicio"
+            tools:ignore="MissingConstraints" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -59,7 +63,8 @@
             tools:layout_conversion_absoluteHeight="25dp"
             tools:layout_conversion_absoluteWidth="137dp"
             tools:layout_editor_absoluteX="258dp"
-            tools:layout_editor_absoluteY="6dp" />
+            tools:layout_editor_absoluteY="6dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/Temporada"
@@ -76,7 +81,7 @@
             tools:layout_editor_absoluteX="425dp" />
 
         <TextView
-            android:id="@+id/plantilla"
+            android:id="@+id/plantilla4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:shadowColor="#FFFFFF"

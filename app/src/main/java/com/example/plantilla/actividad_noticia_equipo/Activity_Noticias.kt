@@ -8,8 +8,6 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import com.example.plantilla.R
-import kotlinx.android.synthetic.main.activity_main.*
-import org.w3c.dom.Text
 
 class Activity_Noticias : AppCompatActivity() {
 
@@ -28,7 +26,7 @@ class Activity_Noticias : AppCompatActivity() {
             setContentView(R.layout.activity_detalles)
         }
 
-        val plantilla = findViewById<TextView>(R.id.plantilla)
+        val plantilla = findViewById<TextView>(R.id.plantilla4)
         plantilla.setOnClickListener {
             setContentView(R.layout.principalpartidospantalla)
         }
