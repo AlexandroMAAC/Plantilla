@@ -6,17 +6,18 @@
     android:layout_height="match_parent"
     android:background="@drawable/hola"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".actividades.MainActivity">
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="658dp"
         android:layout_height="wrap_content"
-        android:layout_margin="30"
-        android:paddingStart="240"
+        android:layout_margin="30dp"
+        android:paddingStart="240dp"
         android:text="Cindeportes"
         android:textColor="#FFFFFF"
-        android:textSize="30" />
+        android:textSize="30dp"
+        android:paddingLeft="240dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,7 +39,7 @@
         android:layout_height="wrap_content"
         android:text="Tu Equipo Favorito"
         android:textColor="#FFFFFF"
-        android:textSize="17" />
+        android:textSize="17dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -59,7 +60,8 @@
             android:text="La Liga: Santander 3 - 1"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="35" />
+            android:textSize="35dp"
+            android:gravity="center_horizontal" />
 
         <TextView
             android:id="@+id/textView9"
@@ -108,10 +110,10 @@
                 android:id="@+id/textView12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10"
+                android:layout_margin="10dp"
                 android:text="Noticias de Ultima Hora"
                 android:textColor="#FFFFFF"
-                android:textSize="17" />
+                android:textSize="17dp" />
 
             <ImageView
                 android:id="@+id/imageView2"
@@ -123,11 +125,13 @@
                 android:id="@+id/textView13"
                 android:layout_width="437dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10"
+                android:layout_margin="10dp"
                 android:text="Pique pide al barcelona que nombre Lionel Messi al nuevo estadio "
                 android:textAlignment="viewStart"
                 android:textColor="#FFFFFF"
-                android:textSize="17" />
+                android:textSize="17dp"
+                android:layout_gravity="start"
+                android:gravity="start" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -139,11 +143,12 @@
                 android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="44dp"
-                android:layout_margin="10"
+                android:layout_margin="10dp"
                 android:text="Olimpia vence al real de minas 3-2 y pone presion al motagua"
                 android:textAlignment="viewStart"
                 android:textColor="#FFFFFF"
-                android:textSize="17" />
+                android:textSize="17dp"
+                android:layout_gravity="start" />
         </LinearLayout>
 
     </ScrollView>

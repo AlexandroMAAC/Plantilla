@@ -1,5 +1,6 @@
 package com.example.plantilla.actividades
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -8,8 +9,14 @@ import com.example.plantilla.adaptadores.AdaptadorAlineacion
 import com.example.plantilla.adaptadores.AdaptadorPartidos
 import com.example.plantilla.clasedatos.Alineacion
 import com.example.plantilla.clasedatos.Partidos
+import com.example.plantilla.data.Request
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.imageView10
+import kotlinx.android.synthetic.main.activity_mainc1.*
 import kotlinx.android.synthetic.main.principalpartidospantalla.*
+import org.jetbrains.anko.doAsync
+import org.jetbrains.anko.toast
+import org.jetbrains.anko.uiThread
 
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_main)
 
         rvPlantilla.layoutManager = LinearLayoutManager(this)
@@ -27,6 +35,12 @@ class MainActivity : AppCompatActivity() {
             )
         rvpartidos.layoutManager = LinearLayoutManager(this)
         rvpartidos.adapter = AdaptadorPartidos(Datos(), this)
+
+        //val url = "https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=Arsenal"
+
+
+
+
     }
 
     private  fun generarDatosPrueba() : ArrayList<Alineacion>{
