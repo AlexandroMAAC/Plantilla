@@ -1,6 +1,7 @@
 package com.example.plantilla.actividad_noticia_equipo
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,6 +16,7 @@ class Activity_Noticias : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+        this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE)
         setContentView(R.layout.activity_main)
 
         val home = findViewById<ImageView>(R.id.home_noticias1)
