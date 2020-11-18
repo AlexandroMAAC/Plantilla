@@ -17,16 +17,16 @@ class Activity_Noticias : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
 
-        val home = findViewById<ImageView>(R.id.home)
+        val home = findViewById<ImageView>(R.id.home_noticias1)
         home.setOnClickListener{
             setContentView(R.layout.activity_mainc1)
         }
-        val partidos = findViewById<TextView>(R.id.partidos)
+        val partidos = findViewById<TextView>(R.id.Partidos_Noticias)
         partidos.setOnClickListener {
             setContentView(R.layout.activity_detalles)
         }
 
-        val plantilla = findViewById<TextView>(R.id.plantilla4)
+        val plantilla = findViewById<TextView>(R.id.Plantilla_Noticias)
         plantilla.setOnClickListener {
             setContentView(R.layout.principalpartidospantalla)
         }

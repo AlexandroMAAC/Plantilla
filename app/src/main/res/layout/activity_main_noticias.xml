@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202020">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="389dp"
+        android:layout_height="235dp"
+        tools:layout_editor_absoluteY="4dp">
+
+        <ImageView
+            android:id="@+id/home_noticias1"
+            android:layout_width="84dp"
+            android:layout_height="67dp"
+            app:srcCompat="@drawable/inicio" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="141dp"
+            android:layout_height="112dp"
+            app:srcCompat="@drawable/barca"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="30dp" />
+
+        <TextView
+            android:id="@+id/Plantilla_Noticias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plantilla"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="285dp"
+            tools:layout_editor_absoluteY="196dp" />
+
+        <TextView
+            android:id="@+id/noticias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noticias"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="196dp" />
+
+        <TextView
+            android:id="@+id/Partidos_Noticias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temporada"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="196dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FC Barcelona"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="138dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="408dp"
+        android:layout_height="601dp"
+        tools:layout_editor_absoluteY="245dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/noti1"
+                    android:layout_width="394dp"
+                    android:layout_height="196dp"
+                    app:srcCompat="@drawable/noticia1" />
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="Ansu Fati y Pedri lideran el intento de remontada"
+
+                    android:textColor="#FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="394dp"
+                    android:layout_height="196dp"
+                    app:srcCompat="@drawable/noticia2" />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="El Dynamo de Kiev se presentara en el camp nou sin porteros"
+                    android:textColor="#FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="394dp"
+                    android:layout_height="196dp"
+                    app:srcCompat="@drawable/noticia3" />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="La salida de Bartomeu no cambia los planes con Eric Garcia"
+                    android:textColor="#FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="394dp"
+                    android:layout_height="196dp"
+                    app:srcCompat="@drawable/noticia4" />
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="El Barça ganó la Liga con comienzos casi tan horribles como el de este 2020"
+                    android:textColor="#FFFFFF" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="394dp"
+                    android:layout_height="196dp"
+                    app:srcCompat="@drawable/noticia5" />
+
+                <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:text="El peor arranque goleador de la carrera de Messi: Solo 1 gol en 6 partidos de Liga"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
