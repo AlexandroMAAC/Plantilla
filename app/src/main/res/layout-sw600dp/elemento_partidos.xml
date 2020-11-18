@@ -5,7 +5,8 @@
     android:id="@+id/partidospantalla"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#222121">
+    android:background="#222121"
+    tools:ignore="MissingDefaultResource">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
